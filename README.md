@@ -402,16 +402,16 @@ A Grafana dashboard template has been provided in the `Grafana Template` folder 
 
 Creating a new alert can be quite a manual process (as of Grafana v8.x). However, the process is as such:
 1. Fill up metadata
-![image]
+![]{attachments/641804391/grafana1.png}
 2. Create query for metric - the current set up uses a simple query as seen below.
 ```
 {metric} / {metric}_max
 ```
 Then the second expression can be left as seen below:
-![image]
+![]{attachments/641804391/grafana2.png}
 
 3. Fill up the rest of the metadata for the alert.
-![image]
+![]{attachments/641804391/grafana3.png}
   
 
   
