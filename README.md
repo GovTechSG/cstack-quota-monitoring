@@ -63,7 +63,7 @@ Adding TA Metrics
 
 Adding Trusted Advisor metrics is simple. We only have to update the JSON config file to add in a new TA metric, as seen below.
 
-**metric\_metadata.json** Expand source
+**metric\_metadata.json** 
 
 ```js
 {
@@ -402,16 +402,16 @@ A Grafana dashboard template has been provided in the `Grafana Template` folder 
 
 Creating a new alert can be quite a manual process (as of Grafana v8.x). However, the process is as such:
 1. Fill up metadata
-![]{attachments/641804391/grafana1.png}
+![](attachments/641804391/grafana1.png)
 2. Create query for metric - the current set up uses a simple query as seen below.
 ```
 {metric} / {metric}_max
 ```
 Then the second expression can be left as seen below:
-![]{attachments/641804391/grafana2.png}
+![](attachments/641804391/grafana2.png)
 
 3. Fill up the rest of the metadata for the alert.
-![]{attachments/641804391/grafana3.png}
+![](attachments/641804391/grafana3.png)
   
 
   
