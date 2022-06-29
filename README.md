@@ -70,191 +70,191 @@ Adding Trusted Advisor metrics is simple. We only have to update the JSON config
     "checks": {
         "ta_metrics": {
             "ec2": {
-                "cstack_quota_monitor_ec2_on_demand_instances_total": {
+                "ec2_on_demand_instances_total": {
                     "id": "0Xc6LMYG8P",
                     "description": "Checks for usage that is more than 80% of the EC2 On-Demand Instances Limit. Values are based on a snapshot, so your current usage might differ. Limit and usage data can take up to 24 hours to reflect any changes. In cases where limits have been recently increased, you may temporarily see utilization that exceeds the limit.",
-                    "metricName": "cstack_quota_monitor_ec2_on_demand_instances_total"
+                    "metricName": "ec2_on_demand_instances_total"
                 },
-                "cstack_quota_monitor_ec2_reserved_instance_leases_total": {
+                "ec2_reserved_instance_leases_total": {
                     "id": "iH7PP0l7J9",
                     "description": "Checks for usage that is more than 80% of the EC2 Reserved Instance Leases Limit. Values are based on a snapshot, so your current usage might differ. Limit and usage data can take up to 24 hours to reflect any changes. In cases where limits have been recently increased, you may temporarily see utilization that exceeds the limit.",
-                    "metricName": "cstack_quota_monitor_ec2_reserved_instance_leases_total"
+                    "metricName": "ec2_reserved_instance_leases_total"
                 }
             },
             "ses": {
-                "cstack_quota_monitor_ses_daily_sending_quota_total": {
+                "ses_daily_sending_quota_total": {
                     "id": "hJ7NN0l7J9",
                     "description": "Checks for usage that is more than 80% of the SES Daily Sending Quota Limit. Values are based on a snapshot, so your current usage might differ. Limit and usage data can take up to 24 hours to reflect any changes. In cases where limits have been recently increased, you may temporarily see utilization that exceeds the limit.",
-                    "metricName": "cstack_quota_monitor_ses_daily_sending_quota_total"
+                    "metricName": "ses_daily_sending_quota_total"
                 }
             },
             "ebs": {
-                "cstack_quota_monitor_ebs_provisioned_iops_ssd_volume_aggregate_iops_total": {
+                "ebs_provisioned_iops_ssd_volume_aggregate_iops_total": {
                     "id": "tV7YY0l7J9",
                     "description": "Checks for usage that is more than 80% of the EBS Provisioned IOPS (SSD) Volume Aggregate IOPS Limit. Values are based on a snapshot, so your current usage might differ. Limit and usage data can take up to 24 hours to reflect any changes. In cases where limits have been recently increased, you may temporarily see utilization that exceeds the limit.",
-                    "metricName": "cstack_quota_monitor_ebs_provisioned_iops_ssd_volume_aggregate_iops_total"
+                    "metricName": "ebs_provisioned_iops_ssd_volume_aggregate_iops_total"
                 },
-                "cstack_quota_monitor_ebs_provisioned_iops_ssd_io1_volume_storage_total": {
+                "ebs_provisioned_iops_ssd_io1_volume_storage_total": {
                     "id": "gI7MM0l7J9",
                     "description": "Checks for usage that is more than 80% of the EBS Provisioned IOPS SSD (io1) Volume Storage Limit. Values are based on a snapshot, so your current usage might differ. Limit and usage data can take up to 24 hours to reflect any changes. In cases where limits have been recently increased, you may temporarily see utilization that exceeds the limit.",
-                    "metricName": "cstack_quota_monitor_ebs_provisioned_iops_ssd_io1_volume_storage_total"
+                    "metricName": "ebs_provisioned_iops_ssd_io1_volume_storage_total"
                 },
-                "cstack_quota_monitor_ebs_active_snapshots_total": {
+                "ebs_active_snapshots_total": {
                     "id": "eI7KK0l7J9",
                     "description": "Checks for usage that is more than 80% of the EBS Active Snapshots Limit. Values are based on a snapshot, so your current usage might differ. Limit and usage data can take up to 24 hours to reflect any changes. In cases where limits have been recently increased, you may temporarily see utilization that exceeds the limit.",
-                    "metricName": "cstack_quota_monitor_ebs_active_snapshots_total"
+                    "metricName": "ebs_active_snapshots_total"
                 },
-                "cstack_quota_monitor_ebs_general_purpose_ssd_gp2_volume_storage_total": {
+                "ebs_general_purpose_ssd_gp2_volume_storage_total": {
                     "id": "dH7RR0l6J9",
                     "description": "Checks for usage that is more than 80% of the EBS General Purpose SSD (gp2) Volume Storage Limit. Values are based on a snapshot, so your current usage might differ. Limit and usage data can take up to 24 hours to reflect any changes. In cases where limits have been recently increased, you may temporarily see utilization that exceeds the limit.",
-                    "metricName": "cstack_quota_monitor_ebs_general_purpose_ssd_gp2_volume_storage_total"
+                    "metricName": "ebs_general_purpose_ssd_gp2_volume_storage_total"
                 },
-                "cstack_quota_monitor_ebs_magnetic_standard_volume_storage_total": {
+                "ebs_magnetic_standard_volume_storage_total": {
                     "id": "cG7HH0l7J9",
                     "description": "Checks for usage that is more than 80% of the EBS Magnetic (standard) Volume Storage Limit. Values are based on a snapshot, so your current usage might differ. Limit and usage data can take up to 24 hours to reflect any changes. In cases where limits have been recently increased, you may temporarily see utilization that exceeds the limit.",
-                    "metricName": "cstack_quota_monitor_ebs_magnetic_standard_volume_storage_total"
+                    "metricName": "ebs_magnetic_standard_volume_storage_total"
                 },
-                "cstack_quota_monitor_ebs_throughput_optimized_hdd_st1_volume_storage_total": {
+                "ebs_throughput_optimized_hdd_st1_volume_storage_total": {
                     "id": "wH7DD0l3J9",
                     "description": "Checks for usage that is more than 80% of the EBS Throughput Optimized HDD (st1) Volume Storage Limit. Values are based on a snapshot, so your current usage might differ. Limit and usage data can take up to 24 hours to reflect any changes. In cases where limits have been recently increased, you may temporarily see utilization that exceeds the limit.",
-                    "metricName": "cstack_quota_monitor_ebs_throughput_optimized_hdd_st1_volume_storage_total"
+                    "metricName": "ebs_throughput_optimized_hdd_st1_volume_storage_total"
                 },
-                "cstack_quota_monitor_ebs_cold_hdd_sc1_volume_storage_total": {
+                "ebs_cold_hdd_sc1_volume_storage_total": {
                     "id": "gH5CC0e3J9",
                     "description": "Checks for usage that is more than 80% of the EBS Cold HDD (sc1) Volume Storage Limit. Values are based on a snapshot, so your current usage might differ. Limit and usage data can take up to 24 hours to reflect any changes. In cases where limits have been recently increased, you may temporarily see utilization that exceeds the limit.",
-                    "metricName": "cstack_quota_monitor_ebs_cold_hdd_sc1_volume_storage_total"
+                    "metricName": "ebs_cold_hdd_sc1_volume_storage_total"
                 }
             },
             "vpc": {
-                "cstack_quota_monitor_vpc_total": {
+                "vpc_total": {
                     "id": "jL7PP0l7J9",
                     "description": "Checks for usage that is more than 80% of the VPC Limit. Values are based on a snapshot, so your current usage might differ. Limit and usage data can take up to 24 hours to reflect any changes. In cases where limits have been recently increased, you may temporarily see utilization that exceeds the limit.",
-                    "metricName": "cstack_quota_monitor_vpc_total"
+                    "metricName": "vpc_total"
                 },
-                "cstack_quota_monitor_vpc_internet_gateways_total": {
+                "vpc_internet_gateways_total": {
                     "id": "kM7QQ0l7J9",
                     "description": "Checks for usage that is more than 80% of the VPC Internet Gateways Limit. Values are based on a snapshot, so your current usage might differ. Limit and usage data can take up to 24 hours to reflect any changes. In cases where limits have been recently increased, you may temporarily see utilization that exceeds the limit.",
-                    "metricName": "cstack_quota_monitor_vpc_internet_gateways_total"
+                    "metricName": "vpc_internet_gateways_total"
                 },
-                "cstack_quota_monitor_ec2_vpc_elastic_ip_address_total": {
+                "ec2_vpc_elastic_ip_address_total": {
                     "id": "lN7RR0l7J9",
                     "description": "Checks for usage that is more than 80% of the EC2-VPC Elastic IP Address Limit. Values are based on a snapshot, so your current usage might differ. Limit and usage data can take up to 24 hours to reflect any changes. In cases where limits have been recently increased, you may temporarily see utilization that exceeds the limit.",
-                    "metricName": "cstack_quota_monitor_ec2_vpc_elastic_ip_address_total"
+                    "metricName": "ec2_vpc_elastic_ip_address_total"
                 }
             },
             "elb": {
-                "cstack_quota_monitor_elb_classic_load_balancers_total": {
+                "elb_classic_load_balancers_total": {
                     "id": "iK7OO0l7J9",
                     "description": "Checks for usage that is more than 80% of the ELB Classic Load Balancers. Application Load Balancers and Network Load Balancers have a separate limit. Values are based on a snapshot, so your current usage might differ. Limit and usage data can take up to 24 hours to reflect any changes. In cases where limits have been recently increased, you may temporarily see utilization that exceeds the limit.",
-                    "metricName": "cstack_quota_monitor_elb_classic_load_balancers_total"
+                    "metricName": "elb_classic_load_balancers_total"
                 },
-                "cstack_quota_monitor_elb_application_load_balancers_total": {
+                "elb_application_load_balancers_total": {
                     "id": "EM8b3yLRTr",
                     "description": "Checks for usage that is more than 80% of the ELB Application Load Balancers Limit. Classic Load Balancers and Network Load Balancers have separate limits. Values are based on a snapshot, so your current usage might differ. Limit and usage data can take up to 24 hours to reflect any changes. In cases where limits have been recently increased, you may temporarily see utilization that exceeds the limit.",
-                    "metricName": "cstack_quota_monitor_elb_application_load_balancers_total"
+                    "metricName": "elb_application_load_balancers_total"
                 },
-                "cstack_quota_monitor_elb_network_load_balancers_total": {
+                "elb_network_load_balancers_total": {
                     "id": "8wIqYSt25K",
                     "description": "Checks for usage that is more than 80% of the ELB Network Load Balancers Limit. Classic Load Balancers and Application Load Balancers have separate limits. Values are based on a snapshot, so your current usage might differ. Limit and usage data can take up to 24 hours to reflect any changes. In cases where limits have been recently increased, you may temporarily see utilization that exceeds the limit.",
-                    "metricName": "cstack_quota_monitor_elb_network_load_balancers_total"
+                    "metricName": "elb_network_load_balancers_total"
                 }
             },
             "rds": {
-                "cstack_quota_monitor_rds_cluster_roles_total": {
+                "rds_cluster_roles_total": {
                     "id": "7fuccf1Mx7",
                     "description": "Checks for usage that is more than 80% of the RDS Cluster Roles Limit. Values are based on a snapshot, so your current usage might differ. Limit and usage data can take up to 24 hours to reflect any changes. In cases where limits have been recently increased, you may temporarily see utilization that exceeds the limit.",
-                    "metricName": "cstack_quota_monitor_rds_cluster_roles_total"
+                    "metricName": "rds_cluster_roles_total"
                 },
-                "cstack_quota_monitor_rds_cluster_parameter_groups_total": {
+                "rds_cluster_parameter_groups_total": {
                     "id": "jtlIMO3qZM",
                     "description": "Checks for usage that is more than 80% of the RDS Cluster Parameter Groups Limit. Values are based on a snapshot, so your current usage might differ. Limit and usage data can take up to 24 hours to reflect any changes. In cases where limits have been recently increased, you may temporarily see utilization that exceeds the limit.",
-                    "metricName": "cstack_quota_monitor_rds_cluster_parameter_groups_total"
+                    "metricName": "rds_cluster_parameter_groups_total"
                 },
-                "cstack_quota_monitor_rds_clusters_total": {
+                "rds_clusters_total": {
                     "id": "gjqMBn6pjz",
                     "description": "Checks for usage that is more than 80% of the RDS Clusters Limit. Values are based on a snapshot, so your current usage might differ. Limit and usage data can take up to 24 hours to reflect any changes. In cases where limits have been recently increased, you may temporarily see utilization that exceeds the limit.",
-                    "metricName": "cstack_quota_monitor_rds_clusters_total"
+                    "metricName": "rds_clusters_total"
                 },
-                "cstack_quota_monitor_rds_reserved_instances_total": {
+                "rds_reserved_instances_total": {
                     "id": "UUDvOa5r34",
                     "description": "Checks for usage that is more than 80% of the RDS Reserved Instances Limit. Values are based on a snapshot, so your current usage might differ. Limit and usage data can take up to 24 hours to reflect any changes. In cases where limits have been recently increased, you may temporarily see utilization that exceeds the limit.",
-                    "metricName": "cstack_quota_monitor_rds_reserved_instances_total"
+                    "metricName": "rds_reserved_instances_total"
                 },
-                "cstack_quota_monitor_rds_subnets_per_subnet_group_total": {
+                "rds_subnets_per_subnet_group_total": {
                     "id": "jEhCtdJKOY",
                     "description": "Checks for usage that is more than 80% of the RDS Subnets per Subnet Group Limit. Values are based on a snapshot, so your current usage might differ. Limit and usage data can take up to 24 hours to reflect any changes. In cases where limits have been recently increased, you may temporarily see utilization that exceeds the limit.",
-                    "metricName": "cstack_quota_monitor_rds_subnets_per_subnet_group_total"
+                    "metricName": "rds_subnets_per_subnet_group_total"
                 },
-                "cstack_quota_monitor_rds_subnet_groups_total": {
+                "rds_subnet_groups_total": {
                     "id": "dYWBaXaaMM",
                     "description": "Checks for usage that is more than 80% of the RDS Subnet Groups Limit. Values are based on a snapshot, so your current usage might differ. Limit and usage data can take up to 24 hours to reflect any changes. In cases where limits have been recently increased, you may temporarily see utilization that exceeds the limit.",
-                    "metricName": "cstack_quota_monitor_rds_subnet_groups_total"
+                    "metricName": "rds_subnet_groups_total"
                 },
-                "cstack_quota_monitor_rds_option_groups_total": {
+                "rds_option_groups_total": {
                     "id": "3Njm0DJQO9",
                     "description": "Checks for usage that is more than 80% of the RDS Option Groups Limit. Values are based on a snapshot, so your current usage might differ. Limit and usage data can take up to 24 hours to reflect any changes. In cases where limits have been recently increased, you may temporarily see utilization that exceeds the limit.",
-                    "metricName": "cstack_quota_monitor_rds_option_groups_total"
+                    "metricName": "rds_option_groups_total"
                 },
-                "cstack_quota_monitor_rds_event_subscriptions_total": {
+                "rds_event_subscriptions_total": {
                     "id": "keAhfbH5yb",
                     "description": "Checks for usage that is more than 80% of the RDS Event Subscriptions Limit. Values are based on a snapshot, so your current usage might differ. Limit and usage data can take up to 24 hours to reflect any changes. In cases where limits have been recently increased, you may temporarily see utilization that exceeds the limit.",
-                    "metricName": "cstack_quota_monitor_rds_event_subscriptions_total"
+                    "metricName": "rds_event_subscriptions_total"
                 },
-                "cstack_quota_monitor_rds_db_manual_snapshots_total": {
+                "rds_db_manual_snapshots_total": {
                     "id": "dV84wpqRUs",
                     "description": "Checks for usage that is more than 80% of the RDS DB Manual Snapshots Limit. Values are based on a snapshot, so your current usage might differ. Limit and usage data can take up to 24 hours to reflect any changes. In cases where limits have been recently increased, you may temporarily see utilization that exceeds the limit.",
-                    "metricName": "cstack_quota_monitor_rds_db_manual_snapshots_total"
+                    "metricName": "rds_db_manual_snapshots_total"
                 },
-                "cstack_quota_monitor_rds_total_storage_quota_total": {
+                "rds_total_storage_quota_total": {
                     "id": "P1jhKWEmLa",
                     "description": "Checks for usage that is more than 80% of the RDS Total Storage Quota Limit. Values are based on a snapshot, so your current usage might differ. Limit and usage data can take up to 24 hours to reflect any changes. In cases where limits have been recently increased, you may temporarily see utilization that exceeds the limit.",
-                    "metricName": "cstack_quota_monitor_rds_total_storage_quota_total"
+                    "metricName": "rds_total_storage_quota_total"
                 },
-                "cstack_quota_monitor_rds_db_parameter_groups_total": {
+                "rds_db_parameter_groups_total": {
                     "id": "jEECYg2YVU",
                     "description": "Checks for usage that is more than 80% of the RDS DB Parameter Groups Limit. Values are based on a snapshot, so your current usage might differ. Limit and usage data can take up to 24 hours to reflect any changes. In cases where limits have been recently increased, you may temporarily see utilization that exceeds the limit.",
-                    "metricName": "cstack_quota_monitor_rds_db_parameter_groups_total"
+                    "metricName": "rds_db_parameter_groups_total"
                 },
-                "cstack_quota_monitor_rds_read_replicas_per_master_total": {
+                "rds_read_replicas_per_master_total": {
                     "id": "pYW8UkYz2w",
                     "description": "Checks for usage that is more than 80% of the RDS Read Replicas per Master Limit. Values are based on a snapshot, so your current usage might differ. Limit and usage data can take up to 24 hours to reflect any changes. In cases where limits have been recently increased, you may temporarily see utilization that exceeds the limit.",
-                    "metricName": "cstack_quota_monitor_rds_read_replicas_per_master_total"
+                    "metricName": "rds_read_replicas_per_master_total"
                 },
-                "cstack_quota_monitor_rds_db_security_groups_total": {
+                "rds_db_security_groups_total": {
                     "id": "gfZAn3W7wl",
                     "description": "Checks for usage that is more than 80% of the RDS DB Security Groups Limit. Values are based on a snapshot, so your current usage might differ. Limit and usage data can take up to 24 hours to reflect any changes. In cases where limits have been recently increased, you may temporarily see utilization that exceeds the limit.",
-                    "metricName": "cstack_quota_monitor_rds_db_security_groups_total"
+                    "metricName": "rds_db_security_groups_total"
                 },
-                "cstack_quota_monitor_rds_db_instances_total": {
+                "rds_db_instances_total": {
                     "id": "XG0aXHpIEt",
                     "description": "Checks for usage that is more than 80% of the RDS DB Instances Limit. Values are based on a snapshot, so your current usage might differ. Limit and usage data can take up to 24 hours to reflect any changes. In cases where limits have been recently increased, you may temporarily see utilization that exceeds the limit.",
-                    "metricName": "cstack_quota_monitor_rds_db_instances_total"
+                    "metricName": "rds_db_instances_total"
                 },
-                "cstack_quota_monitor_rds_max_auths_per_security_group_total": {
+                "rds_max_auths_per_security_group_total": {
                     "id": "dBkuNCvqn5",
                     "description": "Checks for usage that is more than 80% of the RDS Max Auths per Security Group Limit. Values are based on a snapshot, so your current usage might differ. Limit and usage data can take up to 24 hours to reflect any changes. In cases where limits have been recently increased, you may temporarily see utilization that exceeds the limit.",
-                    "metricName": "cstack_quota_monitor_rds_max_auths_per_security_group_total"
+                    "metricName": "rds_max_auths_per_security_group_total"
                 }
             },
             "dynamodb": {
-                "cstack_quota_monitor_dynamodb_read_capacity_total": {
+                "dynamodb_read_capacity_total": {
                     "id": "6gtQddfEw6",
                     "description": "Checks for usage that is more than 80% of the DynamoDB Provisioned Throughput Limit for Reads per Account. Values are based on a snapshot, so your current usage might differ. Limit and usage data can take up to 24 hours to reflect any changes. In cases where limits have been recently increased, you may temporarily see utilization that exceeds the limit.",
-                    "metricName": "cstack_quota_monitor_dynamodb_read_capacity_total"
+                    "metricName": "dynamodb_read_capacity_total"
                 },
-                "cstack_quota_monitor_dynamodb_write_capacity_total": {
+                "dynamodb_write_capacity_total": {
                     "id": "c5ftjdfkMr",
                     "description": "Checks for usage that is more than 80% of the DynamoDB Provisioned Throughput Limit for Writes per Account. Values are based on a snapshot, so your current usage might differ. Limit and usage data can take up to 24 hours to reflect any changes. In cases where limits have been recently increased, you may temporarily see utilization that exceeds the limit.",
-                    "metricName": "cstack_quota_monitor_dynamodb_write_capacity_total"
+                    "metricName": "dynamodb_write_capacity_total"
                 }
             }
         },
         "non_ta_metrics": {
             "backup": {
-                "cstack_quota_monitor_backup_backup_plans_total": {
+                "backup_backup_plans_total": {
                     "id": null,
                     "description": "Checks for usage that is more than 80% of Backup Plan usage. Values are based on a snapshot, so your current usage might differ. Limit and usage data can take up to 24 hours to reflect any changes. In cases where limits have been recently increased, you may temporarily see utilization that exceeds the limit.",
-                    "metricName": "cstack_quota_monitor_backup_backup_plans_total",
+                    "metricName": "backup_backup_plans_total",
                     "customQuotas": {
                         "561827064585": {},
                         "766423611572": {
@@ -262,10 +262,10 @@ Adding Trusted Advisor metrics is simple. We only have to update the JSON config
                         }
                     }
                 },
-                "cstack_quota_monitor_backup_backup_vaults_total": {
+                "backup_backup_vaults_total": {
                     "id": null,
                     "description": "Checks for usage that is more than 80% of Backup Vaults usage. Values are based on a snapshot, so your current usage might differ. Limit and usage data can take up to 24 hours to reflect any changes. In cases where limits have been recently increased, you may temporarily see utilization that exceeds the limit.",
-                    "metricName": "cstack_quota_monitor_backup_backup_vaults_total",
+                    "metricName": "backup_backup_vaults_total",
                     "customQuotas": {
                         "561827064585": {},
                         "766423611572": {
@@ -275,17 +275,17 @@ Adding Trusted Advisor metrics is simple. We only have to update the JSON config
                 }
             },
             "ec2": {
-                "cstack_quota_monitor_ec2_vcpu_count_total": {
+                "ec2_vcpu_count_total": {
                     "id": null,
                     "description": "Checks for usage that is more than 80% of EC2 VCPU usage (vCPU count). Values are based on a snapshot, so your current usage might differ. Limit and usage data can take up to 24 hours to reflect any changes. In cases where limits have been recently increased, you may temporarily see utilization that exceeds the limit.",
-                    "metricName": "cstack_quota_monitor_ec2_vcpu_count_total"
+                    "metricName": "ec2_vcpu_count_total"
                 }
             },
             "s3": {
-                "cstack_quota_monitor_s3_bucket_count_total": {
+                "s3_bucket_count_total": {
                     "id": null,
                     "description": "Checks for usage that is more than 80% of the total bucket count.",
-                    "metricName": "cstack_quota_monitor_s3_bucket_count_total",
+                    "metricName": "s3_bucket_count_total",
                     "customQuotas": {
                         "561827064585": {},
                         "766423611572": 1000
@@ -394,10 +394,6 @@ Monitoring and Alerting
 
 Monitoring and alerting are both done on Grafana.
 
-Adding new dashboards should use the data source `prometheus-ops.`
-
-![](attachments/641804391/757902572.png)
-
 A Grafana dashboard template has been provided in the `Grafana Template` folder where the placeholders can be replaced.
 
 Creating a new alert can be quite a manual process (as of Grafana v8.x). However, the process is as such:
@@ -426,10 +422,3 @@ Issues
 3.  the TA refresh function only allows us to refresh every 1 hour(API limitation). If our needs require the refresh interval to be lower, other data sources can be considered instead of TA.
 
   
-
-Pages
-=====
-
-*   [AWS Limit Monitor Proposed Architecture Draft](https://confluence.ship.gov.sg/display/GovKube/AWS+Limit+Monitor+Proposed+Architecture+Draft)
-*   [AWS Service Quota Limitation](AWS-Service-Quota-Limitation_657163136.html)
-*   [AWS TA Endpoint Responses](https://confluence.ship.gov.sg/display/GovKube/AWS+TA+Endpoint+Responses)
