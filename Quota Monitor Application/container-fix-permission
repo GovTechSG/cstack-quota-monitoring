@@ -1,0 +1,17 @@
+#!/bin/sh
+
+# Change owner and group of HOME
+chown -Rf ${APP_UID}:${APP_GID} ${HOME}
+
+# Give permission to HOME
+chmod -Rf g+rw ${HOME}
+chmod -Rf g+x ${HOME}
+
+# Make tmp folder globally accessible
+chmod -Rf 0777 /tmp
+
+# Find and fix permissions to allow group read/write of regular files and execute of directories.
+# Ignore builder mounted drive /dev/mapper/
+find /usr /etc /home $@ -user ${APP_UID} -not -path "/dev/mapper/*" -exec chgrp --quiet ${APP_GID} {} \;
+find /usr /etc /home $@ -user ${APP_UID} -not -path "/dev/mapper/*" -o -group ${APP_GID} -exec chmod g+rw {} \;
+find /usr /etc /home $@ -user ${APP_UID} -not -path "/dev/mapper/*" -o -group ${APP_GID} -type d -exec chmod g+x {} +

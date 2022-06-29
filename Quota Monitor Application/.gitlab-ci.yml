@@ -1,0 +1,4 @@
+include:
+  - project: cstack/internal-pipelines
+    ref: master
+    file: cstack-code-ci.yml

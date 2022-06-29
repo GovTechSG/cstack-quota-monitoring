@@ -1,0 +1,26 @@
+{
+  "name": "limit-monitor-backend",
+  "version": "1.0.0",
+  "description": "AWS quota limit monitor backend solution",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab-in.ship.gov.sg/cstack-tenants/tenant-projects/gt-cstack-playground/limit-monitor-backend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^3.2.3",
+    "aws-regions": "^2.3.1",
+    "aws-sdk": "^2.1086.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "fs": "0.0.1-security",
+    "prom-client": "^14.0.1"
+  }
+}
