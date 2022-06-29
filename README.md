@@ -30,7 +30,7 @@ Reference:
 How to use?
 ===========
 
-To monitor the metrics, we simply have to access the Grafana dashboards under the namespace `Usage/AWS Quota Monitor.`
+To monitor the metrics, we simply have to access the Grafana dashboard when configured correctly.
 
 ![](attachments/641804391/757902592.png)
 
@@ -300,7 +300,7 @@ Adding Trusted Advisor metrics is simple. We only have to update the JSON config
   
 
 1.  If we are adding a new service, we add a new object into the JSON file with the service code as the key.
-2.  Then we add a new metric as the metric name for the key, and then adding an id, description and metric name into the metadata. Ensure that the metric name is prefixed with `cstack_quota_monitor`
+2.  Then we add a new metric as the metric name for the key, and then adding an id, description and metric name into the metadata. 
 3.  When we run the application, it will automatically register that metric if configured correctly.
 
 Adding a non-TA metric
@@ -366,7 +366,7 @@ Adding a new non-TA metric has a few additional steps aside from the ones above.
         
     3.  Add the quota code required into the `quotaCodes` JSON, then replace the fields required.
     4.  Things to update: 
-        1.  "{metricName}" - replace with the metric name applied in the config JSON file.
+        1.  "{`metricName`}" - replace with the metric name applied in the config JSON file.
         2.  "{`service`}" and "{`quota-name`}" - replace service with the aws service code and quota-name with quota name placed in `quotaCodes`
             
         3.  Usage data retrieval - replace the code to retrieve usage data with your own methods. The data should be an integer under the variable `usage`.
