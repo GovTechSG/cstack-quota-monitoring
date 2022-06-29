@@ -353,8 +353,10 @@ Adding a new non-TA metric has a few additional steps aside from the ones above.
         
                         //create prometheus metric
                         let status = promMetrics.calculateUsageStatus(usage, serviceQuotaMax);
-                        let labels = { region: region, max: serviceQuotaMax, status: status, accountId: this.accountId }
+                        let labels = { region: region, status: status, accountId: this.accountId }
                         promMetrics.convertToPrometheusMetrics(metricMetaData.metricName, metricMetaData.description, labels, usage)
+                        promMetrics.convertToPrometheusMetrics(metricMetaData.metricName + "_max", metricMetaData.description, labels, serviceQuotaMax)
+
                     }
                     catch (e) {
                     }
@@ -396,6 +398,20 @@ Adding new dashboards should use the data source `prometheus-ops.`
 
 ![](attachments/641804391/757902572.png)
 
+A Grafana dashboard template has been provided in the `Grafana Template` folder where the placeholders can be replaced.
+
+Creating a new alert can be quite a manual process (as of Grafana v8.x). However, the process is as such:
+1. Fill up metadata
+![image]
+2. Create query for metric - the current set up uses a simple query as seen below.
+```
+{metric} / {metric}_max
+```
+Then the second expression can be left as seen below:
+![image]
+
+3. Fill up the rest of the metadata for the alert.
+![image]
   
 
   
@@ -403,7 +419,7 @@ Adding new dashboards should use the data source `prometheus-ops.`
 Issues
 ======
 
-1.  The greatest issue at the moment is retrieving applied quota values. Some quotas do not have their applied quotas available, hence we have to set the quotas manually. To see this issue in detail, see [AWS Service Quota Limitation](AWS-Service-Quota-Limitation_657163136.html).
+1.  The greatest issue at the moment is retrieving applied quota values. Some quotas do not have their applied quotas available, hence we have to set the quotas manually. 
     1.  We are able to place custom quotas in the JSON configuration file, but this may be inefficient to manage in the long run.
     2.  Secondly, these custom quotas cannot be used in Grafana (as of versions < 8.x) for alerting. Hence, the quotas have to be hard-coded in the query. In later versions, templating and using variables in alerts may be possible.
 2.  Currently the way that we use to configure the AWS accounts to monitor isn't practical (using two separate arrays of credentials). Another way should be considered and implemented in the future.
